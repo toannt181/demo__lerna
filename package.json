@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "lerna run start --stream"
+    "start": "lerna run start --stream",
+    "core": "lerna exec --scope @project/core-components"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
