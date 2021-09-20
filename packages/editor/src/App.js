@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import coreComponent from "@project/core-components";
+import { sum, ComponentA } from "@project/core-components";
 
 function App() {
   return (
@@ -10,12 +10,13 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <ComponentA text="Toan" />
         <button
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => coreComponent()}
+          onClick={() => console.log(sum(1, 2))}
         >
           Learn React
         </button>

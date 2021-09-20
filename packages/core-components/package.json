@@ -1,21 +1,18 @@
 {
   "name": "@project/core-components",
-  "version": "2.0.0",
+  "version": "4.0.0",
   "description": "> TODO: description",
   "author": "toannt181 <toannt181@gmail.com>",
   "homepage": "",
   "license": "ISC",
   "main": "build/main.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
   "files": [
-    "lib"
+    "dist"
   ],
+  "types": "./build/src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "rm -rf build && webpack --mode production"
   },
   "devDependencies": {
     "@types/react": "^17.0.21",

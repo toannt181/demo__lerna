@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "start": "lerna run start --stream",
-    "core": "lerna exec --scope @project/core-components"
+    "core": "lerna exec --scope @project/core-components",
+    "editor": "lerna exec --scope @project/editor"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
