@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "start": "lerna run start --stream",
+    "prestart": "lerna run prestart",
     "core": "lerna exec --scope @project/core-components",
     "editor": "lerna exec --scope @project/editor"
   },
