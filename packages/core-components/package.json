@@ -12,7 +12,7 @@
   "types": "./build/src/index.d.ts",
   "scripts": {
     "dev": "webpack --mode development --watch",
-    "build": "rm -rf build && webpack --mode production"
+    "build": "webpack --mode production"
   },
   "devDependencies": {
     "@types/react": "^17.0.21",
