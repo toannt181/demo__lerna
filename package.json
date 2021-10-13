@@ -2,13 +2,16 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start:editor": "lerna exec --scope @project/editor yarn start",
     "start": "lerna run start --stream",
     "build": "lerna run build --stream",
     "prestart": "lerna run prestart",
-    "core": "lerna exec --scope @project/core-components",
-    "editor": "lerna exec --scope @project/editor"
+    "dashboard": "lerna exec --scope @project/dashboard yarn",
+    "editor": "lerna exec --scope @project/editor yarn",
+    "core": "lerna exec --scope @project/core-components yarn"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^4.0.0"
   }
 }

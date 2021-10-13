@@ -1,6 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { sum, ComponentA, ComponentB } from "@project/core-components";
+import {
+  sum,
+  ComponentA,
+  ComponentB,
+  ComponentHook,
+} from "@project/core-components";
+import * as a from "@project/core-components";
+console.log(a);
 
 function App() {
   return (
@@ -10,8 +17,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <ComponentA text="Toan" />
-        <ComponentB text="Toan" />
+        {/* <ComponentA text="Toan" />
+        <ComponentB text="Toan" /> */}
+        {/* <ComponentHook /> */}
         <button
           className="App-link"
           href="https://reactjs.org"

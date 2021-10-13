@@ -1,7 +1,27 @@
 const path = require("path");
 
+const isDev = process.env.NODE_ENV === "development";
+
 module.exports = {
   entry: "./src/index.ts",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "build"),
+    globalObject: "this",
+    libraryTarget: "umd",
+    library: "@project/core-components",
+  },
+  devtool: isDev ? "inline-source-map" : false,
+  resolve: {
+    // alias: {
+    //   react: path.resolve('node_modules/react'),
+    // },
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
+  },
+  externals: {
+    react: "react",
+    "react-dom": "react-dom",
+  },
   module: {
     rules: [
       {
@@ -48,14 +68,5 @@ module.exports = {
       //   ],
       // },
     ],
-  },
-  resolve: {
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
-  },
-  output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "build"),
-    library: "SolarPopup",
-    libraryTarget: "umd",
   },
 };

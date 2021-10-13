@@ -1,3 +1,6 @@
-export { default as ComponentA } from "./componentA";
-export { default as ComponentB } from "./componentB";
-export { default as sum } from "./sum";
+import ComponentA from "./componentA";
+import ComponentB from "./componentB";
+import ComponentHook from "./ComponentHook";
+import sum from "./sum";
+
+export { ComponentA, ComponentB, ComponentHook, sum };
